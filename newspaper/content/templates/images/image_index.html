@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <h1>All Images</h1>
+  </head>
+  <body>
+    {% if images_list %}
+        <ul>
+        {% for image in images_list %}
+            <li>
+              <a href="/content/images/{{ image.id }}/">
+                {{ image.title }}
+                <img src= {{ MEDIA_URL }}{{image.path.url}}>
+              </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No images are available.</p>
+    {% endif %}
+   </body>
+</html>

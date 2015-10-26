@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <h1>All Contributors</h1>
+  </head>
+  <body>
+    {% if contributors_list %}
+        <ul>
+        {% for contributor in contributors_list %}
+            <li>
+              <a href="/content/contributors/{{ contributor.id }}/">{{ contributor.first_name }} {{ contributor.last_name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No contributors are available.</p>
+    {% endif %}
+   </body>
+</html>

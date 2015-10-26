@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <h1>{{image.title}}</h1>
+    <h2>{{image.subtitle}}</h2>
+    <h3>{{image.pub_date}}</h3>
+    <h5>
+        <ul>
+            {% for contributor in article.contributors.all %}
+                <li>
+                  <a href="/content/contributors/{{ contributor.id }}/">{{ contributor.first_name }} {{contributor.last_name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </h5>
+  </head>
+  <body>
+    <img src= {{ MEDIA_URL }}{{image.path.url}}>
+   </body>
+</html>

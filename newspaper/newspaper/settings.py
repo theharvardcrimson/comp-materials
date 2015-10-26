@@ -101,3 +101,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = '/Users/Jessica/comp/newspaper/'
+MEDIA_URL = 'http://localhost:8000/media/'

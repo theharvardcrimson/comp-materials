@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <h1>{{contributor.first_name}} {{contributor.last_name}}</h1>
+  </head>
+  <body>
+     <ul>
+        {% for content in contributor.content.all %}
+            <li>
+              <a>{{content.title}}</a>
+            </li>
+        {% endfor %}
+      </ul>
+  </body>
+</html>
