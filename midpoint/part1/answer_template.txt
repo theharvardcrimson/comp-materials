@@ -1,0 +1,83 @@
+Midpoint Part 1 Questions
+
+Name: Jessica Wang
+
+################################################################################
+################################# TAGS #########################################
+################################################################################
+
+1: Briefly explain what a "tag" is. What is the name of the URL pattern that handles requests for the tag page? 
+
+Tags (as described in models.py) describe what the content is about ie. Sports, Faculty, Student Groups etc.
+
+url(r'^tag/(?P<tagname>[-\'a-zA-Z0-9 ]*)/%s$' % FILTER_URL_RE, 'tag', name='tagpage'),
+
+
+2: What view handles the tag page?
+
+The tag functions in content/views.py handles the tag page. Based on the url parameter(s) that are passed tag 
+will dictate what filters will be applied to the content.
+
+3: Say I wanted the page for the just the tag “Editorials.” What parameter(s) would be passed from the url to the view, and what would their value(s) be?
+
+local.thecrimson.com/tag/editorials/
+
+The tag parameter would be filled by "editorials" while the sections and types tags would be blank because 
+all editorials are wanted instead of adding additional filters.
+
+4: Now say I wanted only the articles with the tag “Editorials” in the “Opinion” section. What parameter(s) would be passed from url to view now, and what would their value(s) be? 
+
+local.thecrimson.com/tag/editorials/sections/opinion
+
+The tag parameter would be filled by "editorials" and the sections tag will be filled with "opinion" while 
+the types parameter will be empty
+
+################################################################################
+############################### ARTICLES #######################################
+################################################################################
+
+5: What url pattern handles this? What view handles it?
+The URL pattern is generic_patterns = patterns('crimsononline.content.views',
+    url('^' + settings.CONTENT_URL_RE, 'get_content', name='content_content'),
+)
+The view is the get_content function in content/views.py
+
+
+6: What type of object (i.e. what class / model) is the variable “c” in this view? 
+
+"c" is a content object.
+
+7: Which method is ultimately responsible for rendering the article? 
+The _render function with the Content model leads to render the page.html
+
+
+8: What is its file path? 
+content/templates/models/article/pages.html
+
+
+9: Find the div with the id “article-tags” in the template. Explain what is happening in this div. 
+This div creates a "tags" bar at the bottom of the page if the article has tags and 
+loops through them to display each tag individually. 
+
+################################################################################
+######################## BASE TEMPLATE AND SEARCH ##############################
+################################################################################
+
+10: What is the purpose of this particular template? 
+This template creates elements that on most pages of the site, allowing these elements
+to only be coded once, being more efficient and preventing mistakes.
+
+
+11: What are some parts of the website that are defined in `__base.html`? 
+The masthead, search bar, top toolbar and footer toobar are defined in _base.html
+
+
+12: What is the url pattern that handles search? 
+The url patterns are url('^search/', include('crimsononline.search.urls')) in urls.py 
+and url(r'^$', TemplateView.as_view(template_name='search/index.html')) in search/urls.py
+
+
+13: Describe at a high level how we might implement our own search functionality, say, that searched specifically just tags by the tag name. 
+First we would check if the search term is a defined tag, else return "No Results". If 
+the search is a defined tag, then we impliment a function similar to the tag function
+for the "Tag" page, which filters all the content for those who have the indicated tag.
