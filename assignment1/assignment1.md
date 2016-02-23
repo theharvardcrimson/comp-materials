@@ -1,7 +1,7 @@
 # Assignment 1: How to Python
 Hey guys, welcome to Python! Let's start you off on your magical journey by learning some syntax!
 
-If at any point you have an issue, let Tiffany (haotian.wu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) know! Don't bash your head against the wall. We're here to help.
+If at any point you have an issue, let Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) know! Don't bash your head against the wall. We're here to help.
 
 ## Instructions
 Do you have python 2.7 installed? Let's find out! Try typing `python --version` in your terminal. If you don't have it, please consult us, or the internet, for help ASAP.
@@ -51,5 +51,5 @@ Using your dictionary from above, write a function that takes in the full name o
 How might you modify your solution if you knew she has to ship wine to several states?
 
 # Feedback?
-You're done! Congrats! Just email us the file, and you can wipe your hands of the whole thing. Before you go though, **please fill out [this feedback form](https://docs.google.com/forms/d/1KS7CiNRPHC2baAVUTx-ruNFBJW4Ixsnksnz3DpjHVgI/viewform) about this assignment**; we'll use your answers to make the comp better in the future. Thanks, dude!
+You're done! Congrats! Be sure to save your changes and push to your Github. Thanks, dude!
 
