@@ -2,7 +2,7 @@
 
 This week we're going to mess with how to create objects, define classes, and extend those classes. After you write your classes, you'll load and dump some objects to and from a text file, so keep this in mind when naming your attributes. Our code expects them to be named in a certain way.
 
-Again, if at any point you have an issue, let Tiffany (haotian.wu@thecrimson.com) or Josh (josh.palay@thecrimson.com) know! Don't bash your head against the wall. We're here to help.
+Again, if at any point you have an issue, let Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) know! Don't bash your head against the wall. We're here to help.
 
 We've also included some distribution code you'll need to complete this assignment; [Find it here](https://github.com/harvard-crimson/comp/tree/master/assignment2/distribution_code).
 
@@ -79,6 +79,4 @@ You can also create new objects of your own and dump them into `dump.txt`, close
 Now you can play with these objects - call `show`, modify their contents, go crazy! 
 
 ## Feedback?
-You're done! Congrats! Just email us the zipped folder, and you can wipe your hands of the whole thing.
-
-Additionally, if you could, please think about what you thought about this assignment in terms of length, content, and difficulty. Give us your responses [HERE](https://docs.google.com/forms/d/1HIkXeaPEQPErgox2Hez7s2F-7z8-woaT7rDBODNP66g/viewform). Thanks, dude(tte)!
+You're done! Congrats! Just push your code to your Github, and you can wipe your hands of the whole thing.
