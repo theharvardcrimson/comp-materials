@@ -5,7 +5,7 @@ This week, we're going to make our own mock (mock as in fake, not as in making f
 ![django](https://raw.githubusercontent.com/harvard-crimson/comp/master/assignment3/django.gif)
 > Not this kind of Django. We don't condone aggression.
 
-We'll walk you through step-by-step (via an abridged version of the full [Django tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)). Fair warning: there is quite a bit to read! However, what you actually have to do is not too nebulous. If you're ever confused, don't be afraid to ask Tiffany (haotian.wu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) for help!
+We'll walk you through step-by-step (via an abridged version of the full [Django tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)). Fair warning: there is quite a bit to read! However, what you actually have to do is not too nebulous. If you're ever confused, don't be afraid to ask Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) for help!
 
 ## Setting up
 1. Create the virtual environment for your project. If you want to call it `crimson_comp`, try running
@@ -240,6 +240,4 @@ See that bit of output? Yeah, that's the one. `Applying content.0001_initial... 
     - After doing this, exit the shell, reenter the shell, then run `Contributor.objects.all()`. Is your contributor in that list?
 
 ## Feedback
-You're done! Congrats! Just email us the zipped folder, and you can wipe your hands of the whole thing (until next week!).
-
-Also please fill out [this Google Form](https://docs.google.com/forms/d/1t2mpjKZ5GiS_21527SdFzqmS3O7YEDeKkay9_i43Evw/viewform)! We'll be using these responses to improve the comp in the future, yadda yadda yadda, you know the drill. Thanks!
+You're done! Congrats! Just push your code to your Github, and you can wipe your hands of the whole thing (until next week!).
