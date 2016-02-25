@@ -5,7 +5,7 @@ Being proficient with a text editor and being able to open it from the command l
 1. Download [Sublime Text 3](http://www.sublimetext.com/3)
 1. Be able to run it from the command line:
 
-        $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
+        $ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 1. Use it to open files and folders:
 
