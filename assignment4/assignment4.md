@@ -100,9 +100,9 @@ You're almost done! Now since you did lots of things that we may not know the lo
 - the urls of the articles (and how you generated the slugs, if you chose to do so)
 - what field you added for the migration task
 
-Then, zip it all up and email it to both haotian.wu@thecrimson.com and kyle.kwong@thecrimson.com.
+Then, push it to your Github.
 
 Congrats! Now you know how to Django. (If you say it fast enough, people might even think you know how to dance!) Rejoice!
 
 ## Feedback
-As always, give us some feedback through one of those now-legendary google forms. Who puts them out? I don't know. He's probably really cool though; you should definitely be friends with him. Anyways, [here's the link. We made it really really long so you can't miss it. Have fun filling it out! :D](https://docs.google.com/forms/d/1HiFq8wIL7sXhAPeD6oE48G6xclYM8hOlzlYP3qi6o_8/viewform)
+Feel free to email Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) if you have any questions!
