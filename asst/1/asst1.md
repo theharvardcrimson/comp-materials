@@ -13,10 +13,10 @@ Do you have python 2.7 installed? Let's find out! Try typing `python --version` 
   
 ## Step(s) to it
 ###swapchars
-Write a function that takes one (1) string argument. Return that string with the most common letter swapped with the least common letter.
+Write a function that takes one (1) string argument. Return that string with the most common letter swapped with the least common letter. Yes, uppercase and lowercase count towards the same letter.
 
     >>> swapchars('I\'m just a chi-town coder with a nice flow.')
-    "I'm jcst a uhi-town uoder with a niue flow."
+    "U'm jist a chu-town coder wuth a nuce flow."
 You can break ties however you want! (psst! check out [Counters](https://docs.python.org/2/library/collections.html#collections.Counter))
 
 ### sortcat
@@ -39,16 +39,14 @@ We've provided a file called `states.txt` that contains all the state names and 
 
 We'd like you to open the file and read its contents into a dictionary indexed by abbreviation. For example:
 
-    abbrev["AL"] = "Alabama"
+    abbrev['AL'] = 'Alabama'
 
-Then write a function that takes in a state abbreviation and returns the full name of the state. Print out what state Blue's letter is coming from via a print statement!
+Then write a function `bluesclues` that takes in a state abbreviation (assume perfect capitalization) and returns the full name of the state.
 
 ### Blue's Booze
 Blue owns a vineyard (she's really made it big since her hit TV show) and needs to ship wine to Nebraska. However, she doesn't know what the state abbreviation is! 
 
-Using your dictionary from above, write a function that takes in the full name of a state and returns the state's abbreviation. Then use your function and help Blue out!
-
-How might you modify your solution if you knew she has to ship wine to several states?
+Using your dictionary from above, write a function `bluesbooze` that takes in the full name of a state (again, assume perfect capitalization) and returns the state's abbreviation.
 
 # Feedback?
 You're done! Congrats! Be sure to save your changes and push to your Github. Thanks, dude!

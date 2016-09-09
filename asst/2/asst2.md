@@ -4,9 +4,7 @@ This week we're going to mess with how to create objects, define classes, and ex
 
 Again, if at any point you have an issue, let Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) know! Don't bash your head against the wall. We're here to help.
 
-We've also included some distribution code you'll need to complete this assignment; [Find it here](https://github.com/harvard-crimson/comp/tree/master/assignment2/distribution_code).
-
-> __TODO__: Download the distribution code.
+The distribution code you'll need to complete this assignment is in the [comp git repo](https://github.com/harvard-crimson/comp).
 
 ## Get set up
 Doing this assignment will require the use of some third-party libraries. Check out our document at [setting up](https://github.com/harvard-crimson/comp/blob/master/general/setting_up.md) to get yourself ready to download some libraries. If you have any questions about it, definitely shoot one of us an email and we'll help you out :).
@@ -62,17 +60,13 @@ Inside `loadcontent.py` are two methods, `to_json` and `from_json`.
 
 What is JSON? JSON is a lightweight format that makes storing nested dictionaries and lists very easy. It does this by standardizing the ways dictionaries and lists are dumped into strings. The JSON library in Python have functions like `json.loads` and `json.dumps` for this purpose.
 
-Read through the code and make sure you understand it. Also take a look at `dump.txt` to get a feel for what JSON looks like. If you're feeling really ambitious, try writing some code that parses `dumpt.txt` (feel free to look to `loadcontent.py` for inspiration). Again, if you have any questions, consult Google or your Tech Managers.
+Read through the code and make sure you understand it. Also take a look at `dump.txt` to get a feel for what JSON looks like. If you're feeling really ambitious, try writing some code that parses `dump.txt` (feel free to look to `loadcontent.py` for inspiration). Again, if you have any questions, consult Google or your Tech Managers.
 
 To verify that your code above works well, open terminal in the same folder as `loadcontent.py` and pull up the Python shell by just typing
 
     python
 
-Import the functions from `loadcontent.py` as well as the classes from `models.py`.
-
-Call `from_json`. This should load all the strings from `dump.txt` into `Content.existing_content`.
-
-    >>> from_json()
+Import the functions from `loadcontent.py` as well as the classes from `models.py`. Call `from_json`. This should load all the strings from `dump.txt` into `Content.existing_content`.
 
 You can also create new objects of your own and dump them into `dump.txt`, close your Python shell, and then retrieve them later.
 

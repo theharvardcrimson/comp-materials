@@ -47,35 +47,35 @@ Ok, enough with all this high-level theory mumbo-jumbo. Let's install this thing
 1. Finally, __close out of any open terminal windows__ and then open a new one. virtualenvwrapper is all set up and we're ready to rock and roll!
 
 ### usage
-Ok, we've talked about what this thing does and we've set it up. Now let's see what this baby can do! Let's make our first virtual environment and call it `crimson_comp`. Create the virtual environment by running
+Ok, we've talked about what this thing does and we've set it up. Now let's see what this baby can do! Let's make our first virtual environment and call it `crimson`. Create the virtual environment by running
 
 ```
-$ mkvirtualenv crimson_comp
+$ mkvirtualenv crimson
 ```
 
-When you run this command, virtualenvwrapper will actually create new copies of Python and pip, and put them somewhere in a newly-created folder `~/virtualenvs/crimson_comp/`. If you use Python or pip while this virtual environment is activated, you will be using these new, separate copies of them. After you run the command, your prompt should look something like
+When you run this command, virtualenvwrapper will actually create new copies of Python and pip, and put them somewhere in a newly-created folder `~/virtualenvs/crimson/`. If you use Python or pip while this virtual environment is activated, you will be using these new, separate copies of them. After you run the command, your prompt should look something like
 
 ```
-(crimson_comp)$
+(crimson)$
 ```
 
-The `(crimson_comp)` indicates that that the `crimson_comp` virtual environment is currently activated. Now that you have your virtual environment, let's actually use it!
+The `(crimson)` indicates that that the `crimson` virtual environment is currently activated. Now that you have your virtual environment, let's actually use it!
 
 1. Install your very first Python package!  [Pillow](https://pillow.readthedocs.org/) is a fun one; it's a library that makes it really easy to manipulate images. Plus it has a funny name. Install it with
 
-        (crimson_comp)$ pip install Pillow
+        (crimson)$ pip install Pillow
 
 2. Actually use Pillow! Feel free to look at the documentation and play around with it, but the following should be sufficient to prove that we've installed it properly:
 
-        (crimson_comp)$ python
+        (crimson)$ python
         >>> from PIL import Image
 
 3. If you didn't get any errors, you've successfully installed Pillow! Deactivate your virtual environment by running
 
         deactivate
 
-4. Now that you've deactivated your virtual environment, the `(crimson_comp)` should have disappeared from your prompt, and you should no longer have access to any libraries you installed to that virtual environment. Verify that this is the case by re-running the code from step 2. If you get an error, then you're doing well!
+4. Now that you've deactivated your virtual environment, the `(crimson)` should have disappeared from your prompt, and you should no longer have access to any libraries you installed to that virtual environment. Verify that this is the case by re-running the code from step 2. If you get an error, then you're doing well!
 
-5. Re-activate your virtual environment. If you've forgotten what you called it, you can run `lsvirtualenv` to see a list of all your virtual environments. Once you have the name of your virtual environment, you can re-activate it with `workon crimson_comp`
+5. Re-activate your virtual environment. If you've forgotten what you called it, you can run `lsvirtualenv` to see a list of all your virtual environments. Once you have the name of your virtual environment, you can re-activate it with `workon crimson`
 
 There you go! You're now ready to go off in the world and work on Python projects, never having to worry about conflicting libraries ever again :).

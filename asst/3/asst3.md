@@ -8,15 +8,15 @@ This week, we're going to make our own mock (mock as in fake, not as in making f
 We'll walk you through step-by-step (via an abridged version of the full [Django tutorial](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)). Fair warning: there is quite a bit to read! However, what you actually have to do is not too nebulous. If you're ever confused, don't be afraid to ask Jessica (jessica.zhu@thecrimson.com) or Kyle (kyle.kwong@thecrimson.com) for help!
 
 ## Setting up
-1. Create the virtual environment for your project. If you want to call it `crimson_comp`, try running
+1. Create the virtual environment for your project, if you haven't already. If you want to call it `crimson`, try running
 
-        $ mkvirtualenv crimson_comp
+        $ mkvirtualenv crimson
 2. Make sure you're in your virtual environment:
 
-        $ workon crimson_comp
+        $ workon crimson
 3. Install the latest version (1.8) of Django!
         
-        (crimson_comp)$ pip install Django
+        (crimson)$ pip install Django
         
 ## Create your project
 Now it's time to set up the basic file structure for your django project!
@@ -138,7 +138,7 @@ In our content app, we'll create 4 models: **Content**, **Article**, **Image**, 
 
 Sound familiar? You basically had the same type of structure in the last assignment! Except this time, instead of extending object, **Content** should extend **models.Model**, the base model for Django projects.
 
-***TODO:*** Update `content/models.py` to look like this:
+ Update `content/models.py` to look like this:
 
 ```
 from django.db import models
@@ -156,10 +156,6 @@ class Article(Content):
     pass
 
 
-class Image(Content):
-    pass
-
-
 class Contributor(models.Model):
     pass
 
@@ -167,11 +163,11 @@ class Contributor(models.Model):
 
 As you can see, attributes of objects map to "fields" in Django, each of which is represented by an instance of a [Field](https://docs.djangoproject.com/en/1.8/howto/custom-model-fields/#django.db.models.Field) class – e.g., [CharField](https://docs.djangoproject.com/en/1.8/ref/models/fields/#django.db.models.CharField) for shorter strings and [DateTimeField](https://docs.djangoproject.com/en/1.8/ref/models/fields/#django.db.models.DateTimeField) for datetimes. This tells Django what type of data each field holds.
 
-See [this link](https://docs.djangoproject.com/en/1.8/ref/models/fields/#model-field-types) for a list of all the built-in field types. **Sidenote:** the Django tutorial/documentation is nebulous and sometimes hard to navigate. If you're stuck, please don't be afraid to reach out to Tiffany or Kyle for help!
+See [this link](https://docs.djangoproject.com/en/1.8/ref/models/fields/#model-field-types) for a list of all the built-in field types. **Sidenote:** the Django tutorial/documentation is nebulous and sometimes hard to navigate. If you're stuck, please don't be afraid to reach out to Jessica or Kyle for help!
 
 Finally, note a relationship is defined, using a ManyToManyField. That tells Django each Content is related to (possibly many) . Django supports all the common database relationships: many-to-ones, many-to-manys and one-to-ones.
 
-***TODO:*** Now, let's fill in the blanks! Create the Article, Image, and Contributor classes.
+> __TODO__ Now, let's fill in the blanks! Create the Article, Image, and Contributor classes.
 
 ### The Article model should (additionally) have:
 **Attributes:**
@@ -182,26 +178,15 @@ Finally, note a relationship is defined, using a ManyToManyField. That tells Dja
 
 - `show()` (optional): Return a nicely formatted string with information about the Article. 
 
-### The Image model should (additionally) have:
-
-**Attributes:**
-
-- `path`: contains the relative file path to the image file
-
-**Methods:**
-
-- `info()`: return a nicely formatted string with the title, the caption (subtitle), and other information you think is relevant
-
 ### The Contributor model should have:
 **Attributes:**
 
 - `first_name` 
 - `last_name`
-- `content`: a collection of Content objects that this contributor has made.
 
 **Methods:**
 
-- `die`: You're dead to us now; remove yourself from the database.
+- `die`: You're dead to us now; remove yourself from the database (hint: check out [this attribute](https://docs.djangoproject.com/en/1.9/ref/models/instances/#deleting-objects) of a models.Model).
 
 ## Get your models in the database!
 
@@ -212,7 +197,7 @@ That small bit of model code gives Django a lot of information. With it, Django 
 
 However, Django can't do any of this unless we tell our project that our `content` app exists. To do this, we'll need to modify the `INSTALLED_APPS` tuple in `settings.py`.
 
-***TODO***: Add the string `'content'` to the `INSTALLED_APPS` tuple in `settings.py`.
+> __TODO__: Add the string `'content'` to the `INSTALLED_APPS` tuple in `settings.py`.
 
 Now we have all these awesome Python models, but we haven't actually created corresponding tables in the database yet (which was, like, the whole point of models, right?). To create these tables, we need to update our database. Remember those migrations we ran earlier? Let's make one of our own.
 
@@ -238,6 +223,7 @@ See that bit of output? Yeah, that's the one. `Applying content.0001_initial... 
     - Create them with syntax like `c = Contributor(last_name="Ever", first_name="Greatest")`
   - If you create a Contributor `c` and call `c.save()`, does it exist in the database?
     - After doing this, exit the shell, reenter the shell, then run `Contributor.objects.all()`. Is your contributor in that list?
+  - Try tying an author to an article -- that is, associating a Contributor to an Article. Take a look at the [ManyToManyField](https://docs.djangoproject.com/en/1.9/topics/db/examples/many_to_many/) documentation!
 
 ## Feedback
 You're done! Congrats! Just push your code to your Github, and you can wipe your hands of the whole thing (until next week!).

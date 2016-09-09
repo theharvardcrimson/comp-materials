@@ -71,21 +71,21 @@ def from_json():
         if d['type'] == 'Article':
             # this automatically adds the Article or Picture to
             # Content.existing_content
-            Article(d['year'],
-                    d['month'],
-                    d['day'],
-                    d['headline'],
-                    d['content'],
-                    d['contributors'])
+            Article(year=d['year'],
+                    month=d['month'],
+                    day=d['day'],
+                    headline=d['headline'],
+                    content=d['content'],
+                    contributors=d['contributors'])
 
         elif d['type'] == 'Picture':
-            Picture(d['year'],
-                    d['month'],
-                    d['day'],
-                    d['title'],
-                    d['caption'],
-                    d['path'],
-                    d['contributors'])
+            Picture(year=d['year'],
+                    month=d['month'],
+                    day=d['day'],
+                    title=d['title'],
+                    caption=d['caption'],
+                    path=d['path'],
+                    contributors=d['contributors'])
         else:
             # pass quietly
             continue
