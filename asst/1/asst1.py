@@ -12,9 +12,7 @@ def swapchars(s):
                 letterCount[char] += 1
             else:
                 letterCount[char] = 1
-
-    print letterCount
-
+                
     # find the most/least common characters in the string
     for letter in letterCount:
         # most common character
