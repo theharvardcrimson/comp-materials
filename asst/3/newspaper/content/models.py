@@ -28,7 +28,7 @@ class Contributor(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     def show(self):
-        print(self.first_name)
-        print(self.last_name)
+        fullName = str(self.first_name)+' '+str(self.last_name)
+        return(fullName)
     def die(self):
         self.delete()
