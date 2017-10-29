@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Crimson Website Comper Project</h1>
+
+  <p>Hey welcome to the website I built for the crimson comp process. It's kind of shitty, but it does demonstrate my <em>"knowledge"</em> of Django. That's basically it--not much to it.</p>
+
+<h2>Super Cool Website Stats (wow be impressed)</h2>
+
+  <p>I found an example homepage for Django, and they already had some cool features going on which I repurposed to give my website some great extra features! Now you can know the number of articles and contributors on this website! Yay!</p>
+    <ul>
+        <li><strong>Total Articles:</strong> {{ num_articles }}</li>
+        <li><strong>Total Authors:</strong> {{ num_authors }}</li>
+    </ul>
+
+<h3>Newest Content</h3>
+<p>Below are the newest and greates articles of all time on the website.</p>
+    {% if data %}
+    <ul>
+      {% for elmt in data %}
+      <li>
+        <a href="{{ elmt.1 }}">{{ elmt.0 }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>Wow news really dropped the ball on this one. We have literally no articles.</p>
+    {% endif %}  
+
+{% endblock %}
