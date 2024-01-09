@@ -6,7 +6,7 @@ If at any point, you encounter errors or have questions about our reasoning, let
 
 ### Git
 
-This is likely already installed unless you are (Windows)[https://git-scm.com/download/win]. `git` is crucial! It is your best friend.
+This is likely already installed unless you are using [Windows](https://git-scm.com/download/win). `git` is crucial! It is your best friend.
 
 The most common workflow might be:
 
