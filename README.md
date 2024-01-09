@@ -19,9 +19,9 @@ The most common workflow might be:
 
 Some good editors include:
 
-- (VS Code)[https://code.visualstudio.com/] (recommended)
-- (Sublime Text)[https://www.sublimetext.com/] (historically popular)
-- (Neovim)[neovim.io] (extremely steep learning curve)
+- [VS Code](https://code.visualstudio.com/) (recommended)
+- [Sublime Text](https://www.sublimetext.com/) (historically popular)
+- [Neovim](neovim.io) (extremely steep learning curve)
 
 For the rest of the setup, we will assume VS Code as your IDE, but the instructions are generally applicable.
 
@@ -41,7 +41,7 @@ The following are optional but helpful during development.
 
 This is what runs JavaScript and allows you to create web apps.
 
-1. Install Volta using these (instructions)[https://docs.volta.sh/guide/getting-started].
+1. Install Volta using these [instructions](https://docs.volta.sh/guide/getting-started).
 2. Run `volta install node`.
 
 Check that `node --version` returns some version number.
