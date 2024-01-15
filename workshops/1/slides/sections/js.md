@@ -40,19 +40,34 @@ Otherwise, loading JavaScript blocks processing and rendering all the HTML and C
 
 ---
 
-```yaml
-layout: 'two-cols'
+```html
+<div id="author" />
+
+<script>
+  const authorEl = document.getElementById('author')
+</script>
 ```
+
+---
 
 ```html
 <div id="author" />
 
 <script>
+  // All return the same element
   document.getElementById('author')
   document.querySelector('#author')
   document.querySelectorAll('#author')[0]
 
-  const timer = setTimeout(() => {})
+  // Global/function scoped; never use this
+  var a = 1
+
+  // Block scoped
+  {
+    let b = 2
+    console.log(b) // Logs `2` to console
+  }
+  console.log(b) // Gives `Uncaught ReferenceError`
 </script>
 ```
 

@@ -1,5 +1,5 @@
 ```yaml
-layout: "statement"
+layout: 'statement'
 ```
 
 # HTML
@@ -7,7 +7,7 @@ layout: "statement"
 ---
 
 ```yaml
-layout: "two-cols-header"
+layout: 'two-cols-header'
 ```
 
 # Elements and Attributes
@@ -58,7 +58,7 @@ layout: "two-cols-header"
 
 <v-click>
 
-Use most meaningful tag for screenreader accessibility
+Use most meaningful tag for screenreader accessibility and SEO
 
 - `p` instead of `div` if it contains only text
 - `nav` instead of `div` if it contains content for navigating site
@@ -69,7 +69,7 @@ Use most meaningful tag for screenreader accessibility
 ---
 
 ```yaml
-layout: "two-cols-header"
+layout: 'two-cols-header'
 ```
 
 # Block vs. Inline
@@ -133,6 +133,20 @@ layout: "two-cols-header"
 <!-- Good -->
 <button onclick="alert()">Button</button>
 ```
+
+---
+
+# Ultimately HTML...
+
+<v-clicks depth="2">
+
+- Constructs the Document Object Model (DOM) as a tree of elements
+  - Every element has 0 or more children
+- Tags are important for Search Engine Optimization (SEO)
+  - The more meaning you include instead of only using generalized wrapper elements like `div` and `span`, the clearer the information is given to SE like Google or Bing
+  - Pushes site to higher rank on SE
+
+</v-clicks>
 
 ---
 
