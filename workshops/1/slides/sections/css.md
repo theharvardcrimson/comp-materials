@@ -1,5 +1,5 @@
 ```yaml
-layout: "statement"
+layout: 'statement'
 ```
 
 # CSS
@@ -7,7 +7,7 @@ layout: "statement"
 ---
 
 ```yaml
-layout: "two-cols"
+layout: 'two-cols'
 ```
 
 ```html
@@ -46,6 +46,82 @@ layout: "two-cols"
 }
 ```
 
+</div>
+
+---
+
+# `px` vs. `rem`
+
+<v-clicks depth="2">
+
+- `px` are pixels that you are familiar with, like making your essay have font size `12`
+- `rem` is relative
+  - Why is this important for the web? Web needs to be universally accessible, so when people that set their system to use larger font sizes, sites should resize everything as well.
+  - Selected font size (default `16px`) times `rem` value is ultimate size.
+  - Scale all sizes like width, margin, etc. with `rem`, not just fonts
+
+</v-clicks>
+
+---
+
+```yaml
+layout: 'two-cols-header'
+```
+
+# Horizontal Centering
+
+::left::
+
+```html
+<div>
+  Lorem ipsum dolor sit amet, qui minim labore
+  <a>anchor tag (link)</a>
+  minim sint cillum sint consectetur cupidatat.
+  <div class="bg-black" />
+  Lorem ipsum dolor sit amet
+</div>
+```
+
+::right::
+
+<div v-click="[0, 1]">
+
+#### `text-align: center`
+
+<div class="text-center bg-gray w-full p-1 my-2">
+Lorem ipsum dolor sit amet, qui minim labore <a href="https://thecrimson.com" target="_blank">anchor tag (link)</a> minim sint cillum sint consectetur cupidatat.
+<div class="bg-black h-6" />
+Lorem ipsum dolor sit amet
+</div>
+
+- Only `inline` elements center because `block` elements fill width anyways
+
+</div>
+
+<div class="absolute top-0" v-click>
+
+#### `flex: 1; justify-content: center`
+
+<div class="flex justify-center bg-gray w-full p-1 gap-2 my-2">
+Lorem ipsum dolor sit amet, qui minim labore <a class href="https://thecrimson.com" target="_blank">anchor tag (link)</a> minim sint cillum sint consectetur cupidatat.
+<div class="bg-black w-6" />
+Lorem ipsum dolor sit amet
+</div>
+
+- All elements are coerced into `block`
+
+</div>
+
+---
+
+# Vertical Centering
+
+- Must use `flex: 1; align-items: center`
+
+<div class="flex items-center bg-gray w-1/2 h-1/2 p-1 mt-4">
+  <div>
+    <div class="h-10 w-10 bg-black" />
+  </div>
 </div>
 
 ---
