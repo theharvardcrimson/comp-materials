@@ -154,6 +154,97 @@ for (let i = 0; i < 10; ++i) {
 
 ---
 
+# Functions
+
+- camelCase by convention
+- Similar to Python preferring snake_case
+- `restArgs` is an array of 0 or more arguments
+
+```js
+function name(arg1, arg2, ...restArgs) {
+  // Code
+}
+```
+
+```js
+const name = (arg1, arg2, ...restArgs) => {
+  // Code
+}
+```
+
+---
+
+# Objects
+
+- Essentially equivalent to JS Object Notation (JSON)
+- Holds key-value pairs
+
+```js
+const userProfile = {
+  fullName: 'Dennis Eum',
+  password: 'crimson',
+  security: [
+    {
+      question: 'Favorite color?',
+      answer: '#1a1b26',
+    },
+  ],
+}
+```
+
+---
+
+# Comparison
+
+- `>`, `>=`, `<`, `<=`
+- Use `===` and `!==`, which is strict
+- There exists `==` and `!=` that allow comparisons between different types, but **never** use
+
+```js
+console.log('' == '0') // `false`
+console.log(0 == '') // `true`
+console.log(0 == '0') // `true`
+
+console.log(false == 'false') // `false`
+console.log(false == '0') // `true`
+```
+
+---
+
+```yaml
+layout: 'two-cols'
+```
+
+# Call-By-Sharing
+
+```js
+function change(arg1, arg2, arg3) {
+  ++arg1
+  arg2 = { crimson: true }
+  arg3.crimson = true
+}
+
+let a = 0
+let b = { crimson: false }
+let c = { crimson: false }
+
+change(a, b, c)
+```
+
+::right::
+
+<v-click>
+
+```js
+console.assert(a === 0)
+console.assert(b.crimson === true)
+console.assert(c.crimson === false)
+```
+
+</v-click>
+
+---
+
 ```html
 <div id="author" />
 
