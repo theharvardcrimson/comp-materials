@@ -1,5 +1,5 @@
 ```yaml
-layout: 'statement'
+layout: 'section'
 ```
 
 # CSS
@@ -56,8 +56,8 @@ layout: 'two-cols'
 
 - `px` are pixels that you are familiar with, like making your essay have font size `12`
 - `rem` is relative
-  - Why is this important for the web? Web needs to be universally accessible, so when people that set their system to use larger font sizes, sites should resize everything as well.
-  - Selected font size (default `16px`) times `rem` value is ultimate size.
+  - Why is this important for the web? Web needs to be universally accessible, so when people that set their system to use larger font sizes, sites should resize everything as well
+  - Selected font size (default `16px`) times `rem` value is ultimate size
   - Scale all sizes like width, margin, etc. with `rem`, not just fonts
 
 </v-clicks>

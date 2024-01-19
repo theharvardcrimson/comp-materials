@@ -1,5 +1,5 @@
 ```yaml
-layout: 'statement'
+layout: 'section'
 ```
 
 # HTML
@@ -76,7 +76,7 @@ layout: 'two-cols-header'
 
 ::left::
 
-- `div` is block while `span` is inline. Both are the most basic/simple wrapper elements.
+- `div` is block while `span` is inline. Both are the most basic/simple wrapper elements
 
 ```html
 <div>
