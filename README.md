@@ -44,6 +44,8 @@ This is what runs JavaScript and allows you to create web apps.
 
 Check that `node --version` returns some version number.
 
+Volta is a version manager that will allow the entire team to work without conflicts.
+
 ## Project
 
 If you are already very experienced working with HTML, JS, CSS, React, etc., let us know before the first workshop. You do not have to attend the workshops if this is the case. You will, however, be asked to do extra tasks for the project.
