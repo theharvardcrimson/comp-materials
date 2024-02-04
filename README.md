@@ -2,8 +2,6 @@
 
 ## Setup
 
-If at any point, you encounter errors or have questions about our reasoning, let us know!
-
 ### Git
 
 This is likely already installed unless you are using [Windows](https://git-scm.com/download/win). `git` is crucial! It is your best friend.
@@ -30,7 +28,7 @@ For the rest of the setup, we will assume VS Code as your IDE, but the instructi
 These are required to keep code maintanable.
 
 - **ESLint** by Microsoft. This is a linter, which is used to flag common errors and follow rules. For example, it might flag unused variables that clutter the codebase.
-- **Prettier** by Prettier. This is a formatter, which keeps every user's code to the same style to keep the codebase readable. 
+- **Prettier** by Prettier. This is a formatter, which keeps every user's code to the same style to keep the codebase readable.
 
 The following are optional but helpful during development.
 
@@ -48,10 +46,11 @@ Check that `node --version` returns some version number.
 
 ## Project
 
-If you are already very experienced working with HTML, JS, CSS, React, Next.js, querying APIs, routes, etc., let us know before the first workshop. You can immediately get started with the project `blog`.
+If you are already very experienced working with HTML, JS, CSS, React, etc., let us know before the first workshop. You do not have to attend the workshops if this is the case. You will, however, be asked to do extra tasks for the project.
 
-Do not choose this option if you have used JS, React, Next.js but:
-- are not confident with HTML, CSS, JS without React
-- are not confident with React state management and when to prefer `useState` over declaring a constant variable
-- are not familiar with React's lifecycle and when rendering updates are triggered
+Do not choose this option if you have used JS, React but are not familiar with:
+
+- HTML, CSS, JS without React
+- React state management and when to prefer `useState` over declaring a constant variable
+- React's lifecycle and when rendering updates are triggered
 - you want to better understand fundamentals of web
