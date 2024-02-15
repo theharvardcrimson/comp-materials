@@ -43,7 +43,7 @@ What does SSR do? Essentially, there is a server that handles all requests. When
 
 This is in contrast to SPAs that do CSR (Client Side Rendering), where HTML rendering of all pages is done locally (and not before).
 
-[^1] Some of you might know that PHP was already a solution to this issue, but there are reasons why we need this in JS. If you want to know further, let me know.
+[^1]: Some of you might know that PHP was already a solution to this issue, but there are reasons why we need this in JS. If you want to know further, let me know.
 
 ### Next.js
 
@@ -55,4 +55,4 @@ I'm not going to go into the basics as Next.js documentation is pretty extensive
 
 - The default paradigm is the server. If you need to change state with `useState`, `useEffect`, etc., you need add a `'use client'` label to the top of your JSX file. This is because state is a result of the user's browser and interaction, so the server cannot actually know what is the right state to render.[^2]
 
-[^2] Actually, starting with React 18, every React application has native access to RSC (React Server Components). Except in React, the default paradigm is not assumed; you need to suffix your filename with `client` or `server`.
+[^2]: Actually, starting with React 18, every React application has native access to RSC (React Server Components). Except in React, the default paradigm is not assumed; you need to suffix your filename with `client` or `server`.
