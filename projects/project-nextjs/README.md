@@ -4,7 +4,7 @@ This project is going to more difficult than `project-vite`, but I assume you al
 
 I know many of you are not familiar with Next.js. But in lieu of the workshops, I trust that all of you feel more comfortable with this material and **can debug** and **read documentation**.
 
-Regardless, if you have only used React with Vite or create-react-app, I've attached a [reference](#reference) to the end of this document. If you have previous experience with Next.js, I still recommend you read the reference.
+**I recommend that everyone read the [reference](#reference), even if you have Next.js experience.** This is a requirement if you have only used React with Vite or create-react-app. (I promise it will be helpful!).
 
 ## Requirements
 
