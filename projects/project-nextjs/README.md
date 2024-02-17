@@ -8,14 +8,19 @@ I know many of you are not familiar with Next.js. But in lieu of the workshops, 
 
 ## Requirements
 
-- Do not install any other `node` packages.
-- Treat this like a codebase many people will use, i.e. use Prettier
+- Do not install any other packages.
+- Treat this like a codebase with many collaborators, i.e. use Prettier
+- Complete all TODOs: you can check where all of them are with `grep -R --exclude-dir=node_modules --exclude-dir=.next TODO`
 
-## Setup
+Email me at [dseum@college.harvard.edu](mailto:dseum@college.harvard.edu) if you have any questions or concerns!
+
+## Usage
+
+### Setup
 
 Install packages with `npm install`.
 
-## Development
+### Development
 
 1. Run the dev server with `npm run dev`.
 2. Open [http://localhost:3000](http://localhost:3000) with your browser.
