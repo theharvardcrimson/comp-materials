@@ -41,7 +41,7 @@ To explain this, you have to understand a brief timeline of the web.
 
 1. You could only serve statically on the web, e.g. having an `index.html` hosted on a server. There was no dynamic content, in that once you uploaded the asset, it couldn't query another API to change its content. To update what the content, you had to reupload the asset.
 2. Skip many many years. There was the invention of JS frameworks that made components. Components solve the issue of updating, for instance, a navigation bar across all your pages. Before, you had to manually go into every page's HTML file then copy paste the navigation bar.[^1]
-3. This was the advent of SPA (Single Page Applications), where instead of having multiple HTML pages that URLs would directly navigate to, you woudl ship a single HTML page with JS to dynamically change the content on this single page to simulate different pages.
+3. This was the advent of SPA (Single Page Applications), where instead of having multiple HTML pages that URLs would directly navigate to, you would ship a single HTML page with JS to dynamically change the content on this single page to simulate different pages.
 4. The problem with that was search engines like Google now had no way of indexing different pages of a site because an SPA was, technically, a single page. SSR was the solution.
 
 What does SSR do? Essentially, there is a server that handles all requests. When a search engine requests a page, the server renders the content directly into HTML. I.e., SSR renders a page into HTML on request on the server before the page is sent to your browser.
